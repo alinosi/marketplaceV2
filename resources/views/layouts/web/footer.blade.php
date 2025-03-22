@@ -1,4 +1,3 @@
-<!-- Footer -->
 <br><br><br>
 <footer>
   <div class="footer-content" id="footer">
@@ -19,9 +18,9 @@
     <div class="footer-right">
       <div class="social-media">
         <p>Find Barber on:</p>
-        <a href="#"><img src="<?= BASEURL ;?>/img/email.png" alt="Email"></a>
-        <a href="#"><img src="<?= BASEURL ;?>/img/twitter.png" alt="Twitter"></a>
-        <a href="#"><img src="<?= BASEURL ;?>/img/instagram.png" alt="Instagram"></a>
+        <a href="#"><img src="{{ assets('assets/img/email.png') }}" alt="Email"></a>
+        <a href="#"><img src="{{ assets('assets/img/twitter.png') }}" alt="Twitter"></a>
+        <a href="#"><img src="{{ assets('assets/img/instagram.png') }}" alt="Instagram"></a>
       </div>
     </div>
   </div>
@@ -34,10 +33,3 @@
     <p>© 2024 Barber. All Rights Reserved</p> 
   </div>
 </footer>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src=" <?= BASEURL ;?> /js/bootstrap.js" crossorigin="anonymous"></script>
-</body>
-</html>
