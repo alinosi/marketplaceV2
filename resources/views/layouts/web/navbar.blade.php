@@ -1,7 +1,7 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top bg-danger">
   <div class="container-fluid">
-    <a class="navbar-brand" href="{{ assets('assets/img/logo.png') }}">
-      <img src="{{ assets('/img/navbarlogo.png') }}" alt="navbarlogo.png" width="50px">
+    <a class="navbar-brand" href="{{ asset('assets/img/logo.png') }}">
+      <img src="{{ asset('assets/img/navbarlogo.png') }}" alt="navbarlogo.png" width="50px">
     </a> 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>

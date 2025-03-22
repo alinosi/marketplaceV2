@@ -1,4 +1,4 @@
-.btncustom-mandiri {
+.btn-custom {
     background-color: #e63946; /* Merah hati */
     border-radius: 10px;
     font-size: 16px;
@@ -11,7 +11,8 @@
     border: 2px solid #e63946; /* Border merah hati */
     transition: background-color 0.3s, color 0.3s; /* Transisi untuk hover */
 }
-.btncustom-mandiri:hover {
-    background-color: #ffffff; /* Warna leci (putih) */
+.btn-custom:hover {
+    background-color: wheat; /* Warna leci (putih) */
     color: #e63946; /* Teks merah hati */
+    border: 2px solid #e63946; /* Border merah hati */
 }

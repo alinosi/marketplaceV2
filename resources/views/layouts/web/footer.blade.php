@@ -18,9 +18,9 @@
     <div class="footer-right">
       <div class="social-media">
         <p>Find Barber on:</p>
-        <a href="#"><img src="{{ assets('assets/img/email.png') }}" alt="Email"></a>
-        <a href="#"><img src="{{ assets('assets/img/twitter.png') }}" alt="Twitter"></a>
-        <a href="#"><img src="{{ assets('assets/img/instagram.png') }}" alt="Instagram"></a>
+        <a href="#"><img src="{{ asset('assets/img/email.png') }}" alt="Email"></a>
+        <a href="#"><img src="{{ asset('assets/img/twitter.png') }}" alt="Twitter"></a>
+        <a href="#"><img src="{{ asset('assets/img/instagram.png') }}" alt="Instagram"></a>
       </div>
     </div>
   </div>

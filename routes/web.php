@@ -7,12 +7,13 @@ function getuserdata() {
         'name' => 'M Thoriqul Fadli',
         'email' => 'mthoriqulfadli@gmal.com',
         'NIM' => '09031282328037',
-        'img' => 'saber.jpg'
+        'img' => 'saber.jpg',
+        'judul' => 'hallo'
     ];
 }
 
 Route::get('/', function () {
-    return view('home', getuserdata());
+    return view('web/home/home', getuserdata());
 })->name('home');
 
 Route::get('/about', function () {
