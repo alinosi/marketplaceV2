@@ -3,8 +3,13 @@
 .main-body {
     font-family: poppins; 
     background-color: wheat;
-    caret-color: transparent;
+    /* caret-color: transparent; */
 }
+
+*:not(input, textarea) {
+    -webkit-user-select: none;
+}
+
 
 .navbar .nav-link,
 .navbar .navbar-brand,

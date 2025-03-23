@@ -9,20 +9,20 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/#home">Home</a>
+          <a class="nav-link active" aria-current="page" href="/#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/Market">Shopping</a>
+          <a class="nav-link" href="/market">Shopping</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/Sell">Sell</a>
+          <a class="nav-link" href="/sell">Sell</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Profile
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="/Profile">Settings</a></li>
+            <li><a class="dropdown-item" href="/profile/1">Settings</a></li>
             <li><hr class="dropdown-divider"></li>
             <?php if (isset($_SESSION['login']) || isset($_COOKIE['login'])) : ?>
             <li><a class="dropdown-item" href="/Logout">Logout</a></li>
