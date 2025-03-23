@@ -2,6 +2,7 @@
 
 use App\Models\Profile;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
 
 // function getuserdata() {
 //     return $data = [
@@ -41,13 +42,10 @@ Route::get('/sell', function () {
     ]);
 })->name('sell');;
 
-Route::get('/profile/{id}', function ($id) {
-    return view('web/profiles/profile', Profile::getuser($id), [
-        "tittle" => "profile"
-    ]);
-})->name('profile');
+Route::get('/profile/{id}', [UserController::class, 'ById'])->name('profile');
+
+Route::get('/admin/dashboard', [UserController::class, 'index'])->name('admindashboard'); 
 
 Route::get('login', function () {
     return view('account/login');
 });
-
