@@ -10,7 +10,7 @@
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
         <link rel="icon" type="image/x-icon" href="{{ asset('assets/img/Icon.png') }}">
 
-        {{-- conditional style --}}
+        {{-- conditional style depends on role --}}
         @if ( $assets === "super")
             <link href=" {{ asset('assets/css/custom/button-mandiri.css') }}" rel="stylesheet">  
         @elseif ( $assets === "market" )
