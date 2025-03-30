@@ -3,6 +3,7 @@
 use App\Models\Profile;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\AdminController;
 
 // function getuserdata() {
 //     return $data = [
@@ -44,7 +45,8 @@ Route::get('/sell', function () {
 
 Route::get('/profile/{id}', [UserController::class, 'ById'])->name('profile');
 
-Route::get('/admin/dashboard', [UserController::class, 'index'])->name('admindashboard'); 
+Route::get('/admin/dashboard', [AdminController::class, 'index'])->name('admindashboard');
+Route::get('/admin/delete', [AdminController::class, 'index'])->name('admindashboard');
 
 Route::get('login', function () {
     return view('account/login');

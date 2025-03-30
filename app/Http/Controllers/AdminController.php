@@ -5,12 +5,12 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Profile;
 
-class UserController extends Controller
+class AdminController extends Controller
 {
-    public function byId($id) 
+    public function index()
     {
-        return view('web/profiles/profile', [
-            'profile' => Profile::getUserbyId($id),
+        return view('admin/dashboard/dashboard', [
+            'profiles' => Profile::getAlluser(),
             "tittle" => "profile",
             "assets" => "profiles"
         ]);
