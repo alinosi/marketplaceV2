@@ -11,16 +11,7 @@ class HomeController extends Controller
     {
         return view('web/home/home', [
             "tittle" => "home",
-            "assets" => "home",
-        ]);
-    }
-
-    public function authenthicateUser($id)
-    {
-        return view('web/profiles/profile', [
-            'profile' => Profile::getUserbyId($id),
-            'tittle' => 'profile',
-            'assets' => 'profiles'
+            "assets" => "home"
         ]);
     }
 }
