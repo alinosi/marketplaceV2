@@ -18,7 +18,8 @@ use App\Http\Controllers\AdminController;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
-Route::get('/profile/{id}', [UserController::class, 'ById'])->name('profile');
+Route::get('/profile', [UserController::class, 'nonAuthenticatedUser'])->name('profile');
+Route::get('/profile{id}', [UserController::class, 'byId'])->name('profile');
 
 Route::get('/admin/dashboard', [AdminController::class, 'index'])->name('admindashboard');
 Route::get('/admin/delete', [AdminController::class, 'index'])->name('admindashboard');
