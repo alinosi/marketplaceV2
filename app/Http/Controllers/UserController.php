@@ -3,14 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Profile;
+use App\Models\User;
 
 class UserController extends Controller
 {
     public function byId($id) 
     {
         return view('web/profiles/profile', [
-            'profile' => Profile::getUserbyId($id),
+            'profile' => User::find($id),
             "tittle" => "profile",
             "assets" => "profiles"
         ]);
