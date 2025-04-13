@@ -27,7 +27,7 @@
               <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item" href="/Logout">Logout</a></li>
             <?php else :?>
-              <li><a class="dropdown-item" href="/profile">Settings</a></li>
+              <li><a class="dropdown-item" href="/profile/1">Settings</a></li>
               <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item" href="/Login">Login</a></li>
             <?php endif; ?>
