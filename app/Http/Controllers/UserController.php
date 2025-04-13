@@ -15,12 +15,4 @@ class UserController extends Controller
             "assets" => "profiles"
         ]);
     }
-
-    public function nonAuthenticatedUser() 
-    {
-        return view('auth/login', [
-            "tittle" => "login",
-            "assets" => "login"
-        ]);
-    }
 }
