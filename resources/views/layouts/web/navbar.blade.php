@@ -23,7 +23,7 @@
           </a>
           <ul class="dropdown-menu">
             <?php if (isset($_SESSION['login']) || isset($_COOKIE['login'])) : ?>
-              <li><a class="dropdown-item" href="/profile{{ $id }}">Settings</a></li>
+              <li><a class="dropdown-item" href="/profile/{{ $id }}">Settings</a></li>
               <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item" href="/Logout">Logout</a></li>
             <?php else :?>

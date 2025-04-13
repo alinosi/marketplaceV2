@@ -3,14 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Profile;
+use App\Models\User;
+
 
 class AdminController extends Controller
 {
     public function index()
     {
         return view('admin/dashboard/dashboard', [
-            'profiles' => Profile::getAlluser(),
+            'profiles' => User::all(),
             "tittle" => "profile",
             "assets" => "profiles"
         ]);
