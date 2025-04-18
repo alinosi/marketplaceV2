@@ -10,7 +10,7 @@
                 <form action="" method="POST">
                     <div class="form-group">
                         <label for="name">Name</label>
-                        <input type="text" class="form-control" name="name" id="name" value="{{ $profile['name'] }}" required>
+                        {{-- <input type="text" class="form-control" name="name" id="name" value="{{ $profile['name'] }}" required> --}}
                     </div>
                     <div class="form-group">
                         <label for="phone">Email</label>
