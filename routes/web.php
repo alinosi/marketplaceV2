@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\AuthController;
 
 // function getuserdata() {
 //     return $data = [
@@ -17,6 +18,7 @@ use App\Http\Controllers\AdminController;
 // }
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/login', [AuthController::class, 'index'])->name('login');
 
 Route::get('/profile', [UserController::class, 'nonAuthenticatedUse'])->name('profile');
 Route::get('/profile/{id}', [UserController::class, 'byId'])->name('profile');

@@ -16,6 +16,8 @@
           <link href=" {{ asset('assets/css/custom/button-mandiri.css') }}" rel="stylesheet">  
       @elseif ( $assets === "profiles" )
           <link href=" {{ asset('assets/css/custom/profiles.css') }}" rel="stylesheet">  
+      @elseif ( $assets === "login" )
+          <link href=" {{ asset('assets/css/custom/login.css') }}" rel="stylesheet">
       @endif
 
   </head>
