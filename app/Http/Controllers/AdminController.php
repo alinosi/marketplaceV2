@@ -25,4 +25,13 @@ class AdminController extends Controller
             "assets" => "profiles"
         ]);
     }
+
+    public function byId($id) 
+    {
+        return view('web/profiles/profile', [
+            'profile' => User::find($id),
+            "title" => "profile",
+            "assets" => "profiles"
+        ]);
+    }
 }
