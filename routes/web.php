@@ -25,6 +25,7 @@ Route::get('/register', [AuthController::class, 'register'])->name('register');
 Route::get('/profile/{id}', [UserController::class, 'byId'])->name('profile');
 
 Route::get('/admin/dashboard', [AdminController::class, 'index'])->name('admindashboard');
+Route::get('/admin', [AdminController::class, 'index'])->name('admindashboard');
 Route::get('/admin/delete', [AdminController::class, 'index'])->name('admindashboard');
 
 

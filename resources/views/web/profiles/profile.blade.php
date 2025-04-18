@@ -4,7 +4,7 @@
     <div class="container profile-container">
         <div class="card">
             <div class="card-body">
-                <h1 class="card-title text-center">{{ $tittle }}</h1>
+                <h1 class="card-title text-center">{{ $title }}</h1>
                 <div class="col-6">
                 </div>
                 <form action="" method="POST">
