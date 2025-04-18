@@ -3,16 +3,14 @@
   <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>{{ $tittle }}</title>
+      <title>{{ $title }}</title>
       <link href=" {{ asset('assets/css/custom/main.css') }}" rel="stylesheet">
       <link href=" {{ asset('assets/css/bootstrap/bootstrap.css') }}" rel="stylesheet">
       <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
       <link rel="icon" type="image/x-icon" href="{{ asset('assets/img/Icon.png') }}">
 
       {{-- conditional style --}}
-      @if ( $assets === "home")
-          <link href=" {{ asset('assets/css/custom/button-mandiri.css') }}" rel="stylesheet">  
-      @elseif ( $assets === "market" )
+      @if ( $assets === "home" || $assets === "market" )
           <link href=" {{ asset('assets/css/custom/button-mandiri.css') }}" rel="stylesheet">  
       @elseif ( $assets === "profiles" )
           <link href=" {{ asset('assets/css/custom/profiles.css') }}" rel="stylesheet">  

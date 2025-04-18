@@ -12,7 +12,7 @@ class AdminController extends Controller
     {
         return view('admin/dashboard/dashboard', [
             'profiles' => User::all(),
-            "tittle" => "profile",
+            "title" => "profile",
             "assets" => "profiles"
         ]);
     }

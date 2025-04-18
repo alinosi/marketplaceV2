@@ -20,7 +20,7 @@ use App\Http\Controllers\AuthController;
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/login', [AuthController::class, 'index'])->name('login');
 
-Route::get('/profile', [UserController::class, 'nonAuthenticatedUse'])->name('profile');
+// Route::get('/profile', [UserController::class, 'nonAuthenticatedUser'])->name('profile');
 Route::get('/profile/{id}', [UserController::class, 'byId'])->name('profile');
 
 Route::get('/admin/dashboard', [AdminController::class, 'index'])->name('admindashboard');
@@ -49,6 +49,6 @@ Route::get('/sell', function () {
 })->name('sell');;
 
 
-Route::get('login', function () {
-    return view('account/login');
-});
+// Route::get('login', function () {
+//     return view('account/login');
+// });

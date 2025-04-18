@@ -11,7 +11,7 @@ class UserController extends Controller
     {
         return view('web/profiles/profile', [
             'profile' => User::find($id),
-            "tittle" => "profile",
+            "title" => "profile",
             "assets" => "profiles"
         ]);
     }
