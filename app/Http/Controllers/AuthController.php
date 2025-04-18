@@ -13,4 +13,12 @@ class AuthController extends Controller
             'assets' => 'login'
         ]);
     }
+
+    public function register()
+    {
+        return view('auth/register', [
+            'title' => 'Register',
+            'assets' => 'register'
+        ]);
+    }
 }

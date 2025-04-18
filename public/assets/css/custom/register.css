@@ -1,0 +1,15 @@
+body {
+    background-color: #f8f9fa; /* Warna latar belakang yang lembut */
+}
+.container {
+    margin-top: 100px; /* Margin atas */
+    max-width: 400px; /* Lebar maksimum untuk form */
+}
+.btn-primary {
+    background-color: #e63946; /* Warna tombol */
+    border: none; /* Menghilangkan border default */
+    width: 100%;
+}
+.btn-primary:hover {
+    background-color: #d62839; /* Warna tombol saat hover */
+}

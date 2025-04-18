@@ -19,6 +19,7 @@ use App\Http\Controllers\AuthController;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/login', [AuthController::class, 'index'])->name('login');
+Route::get('/register', [AuthController::class, 'register'])->name('register');
 
 // Route::get('/profile', [UserController::class, 'nonAuthenticatedUser'])->name('profile');
 Route::get('/profile/{id}', [UserController::class, 'byId'])->name('profile');
