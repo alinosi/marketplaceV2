@@ -17,7 +17,7 @@ class AdminController extends Controller
         ]);
     }
 
-    public function dashoboard()
+    public function dashboard()
     {
         return view('admin/dashboard/dashboard', [
             'profiles' => User::all(),

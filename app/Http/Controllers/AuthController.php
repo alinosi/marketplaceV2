@@ -21,4 +21,9 @@ class AuthController extends Controller
             'assets' => 'register'
         ]);
     }
+
+    public function destroy()
+    {
+        return redirect()->route('home')->with('success', 'Logout Berhasil');
+    }
 }

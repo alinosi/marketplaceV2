@@ -9,7 +9,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/#">Home</a>
+          <a class="nav-link active" aria-current="page" href="{{ route('home') }}/#">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/market">Shopping</a>
@@ -22,14 +22,12 @@
             Profile
           </a>
           <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/profile/">Settings</a></li>
+            <li><hr class="dropdown-divider"></li>
             <?php if (isset($_SESSION['login']) || isset($_COOKIE['login'])) : ?>
-              <li><a class="dropdown-item" href="/profile/{{ $id }}">Settings</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="/Logout">Logout</a></li>
+              <li><a class="dropdown-item" href="{{ route('logout') }}">Logout</a></li>
             <?php else :?>
-              <li><a class="dropdown-item" href="/profile/1">Settings</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="/login">Login</a></li>
+              <li><a class="dropdown-item" href="{{ route('login') }}">Login</a></li>
             <?php endif; ?>
           </ul>
         </li>

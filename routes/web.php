@@ -19,14 +19,16 @@ use App\Http\Controllers\AuthController;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/login', [AuthController::class, 'index'])->name('login');
+Route::get('/logout', [AuthController::class, 'destroy'])->name('logout');
+Route::get('/login/.....', [AuthController::class, 'authValidate'])->name('authentication');
 Route::get('/register', [AuthController::class, 'register'])->name('register');
 
-// Route::get('/profile', [UserController::class, 'nonAuthenticatedUser'])->name('profile');
-Route::get('/profile/{id}', [AdminController::class, 'byId'])->name('profile');
+Route::get('/profile', [UserController::class, 'nonAuthenticatedUser'])->name('detail');
 
-Route::get('/admin/dashboard', [AdminController::class, 'index'])->name('admindashboard');
-Route::get('/admin', [AdminController::class, 'index'])->name('admindashboard');
-Route::get('/admin/delete', [AdminController::class, 'index'])->name('admindashboard');
+Route::get('/admin', [AdminController::class, 'index'])->name('admin');
+Route::get('/admin/dashboard', [AdminController::class, 'dashboard'])->name('admindashboard');
+Route::get('/admin/delete', [AdminController::class, 'index'])->name('adminDelete');
+Route::get('/profile/{id}', [AdminController::class, 'byId'])->name('profile');
 
 
 Route::get('/about', function () {
