@@ -18,7 +18,7 @@
                     </div>
                     <div class="form-group">
                         <label for="address">Address</label>
-                        <textarea class="form-control" name="address" id="address" required>{{ $profile['addres'] }}</textarea>
+                        <textarea class="form-control" name="address" id="address" required>{{ $profile['address'] }}</textarea>
                     </div>
                     <button type="submit" class="btn btn-primary btn-block">Update Profile</button>
                 </form>
