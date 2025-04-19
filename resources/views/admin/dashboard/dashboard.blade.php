@@ -16,11 +16,11 @@
         <tbody>
             @foreach ( $profiles as $profile )
                 <tr>
-                    <td>{{ $profile['user_id'] }}</td>
-                    <td>{{ $profile['name'] }}</td>
-                    <td>{{ $profile['address'] }}</td>
+                    <td>{{ $profile->user_id }}</td>
+                    <td>{{ $profile->name }}</td>
+                    <td>{{ $profile->address }}</td>
                     <td>
-                        <form action="/admin/delete/{{ $profile['id'] }}" method="POST">
+                        <form action="/admin/delete/{{ $profile->id }}" method="POST">
                             <button type="submit" onclick="return confirm('Yakin ingin menghapus?')">Hapus</button>
                         </form>
                     </td>
