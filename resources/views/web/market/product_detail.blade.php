@@ -16,6 +16,7 @@
                             <p class="card-text">Status: {{ $data->status }}</p>
                             <p class="card-text">Category: {{ $data->category->categories }}</p>
                             <p class="card-text">Description: {{ $data->description }}</p>
+                            <p class="card-text">Seller: {{ $data->user->name }}</p>
                             <a href="market/{{ $data->product_id }}"><button class="btn btn-primary" data-toggle="modal">Orders</button></a>
                         </div>
                     </div>
