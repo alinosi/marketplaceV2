@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Products;
+use App\Models\Product;
+use App\Models\User;
 
 class ProductsController extends Controller
 {
@@ -11,15 +12,20 @@ class ProductsController extends Controller
         return view('web/market/market', [
             "title" => "Market",
             "assets" => "market",
-            "data" => Products::all()->toArray()
+            "data" => Product::all()
         ]);
     }
 
-    public function byId($id) {
-        return view('web/market/product', [
+    public function byId( Product $product) {
+        return view('web/market/product_detail', [
             "title" => "Product",
             "assets" => "product",
-            "data" => Products::find($id)
+            "data" => $product
         ]);
     }
+
+//     public function categories ( Categories $category) {
+//         return [ "data" => $category ];
+//     }
+
 }

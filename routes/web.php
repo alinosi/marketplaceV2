@@ -24,7 +24,7 @@ Route::get('/logout', [AuthController::class, 'destroy'])->name('logout');
 Route::get('/login/.....', [AuthController::class, 'authValidate'])->name('authentication');
 Route::get('/register', [AuthController::class, 'register'])->name('register');
 
-Route::get('/profile', [UserController::class, 'nonAuthenticatedUser'])->name('detail');
+Route::get('/profile', [UserController::class, 'nonAuthenticatedUser'])->name('profile_detail');
 
 Route::get('/admin', [AdminController::class, 'index'])->name('admin');
 Route::get('/admin/dashboard', [AdminController::class, 'dashboard'])->name('admindashboard');
@@ -33,8 +33,7 @@ Route::get('/profile/{id}', [AdminController::class, 'byId'])->name('profile');
 
 
 Route::get('/market', [ProductsController::class, 'index'])->name('market');
-
-
+Route::get('/market/{product:product_id}', [ProductsController::class, 'byId'])->name('product_detail');
 
 Route::get('/about', function () {
     return view('about', [

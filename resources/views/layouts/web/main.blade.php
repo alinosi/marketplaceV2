@@ -10,7 +10,7 @@
       <link rel="icon" type="image/x-icon" href="{{ asset('assets/img/Icon.png') }}">
 
       {{-- conditional style --}}
-      @if ( $assets === "home" || $assets === "market" )
+      @if ( $assets === "home" )
           <link href=" {{ asset('assets/css/custom/button-mandiri.css') }}" rel="stylesheet">  
       @elseif ( $assets === "profiles" )
           <link href=" {{ asset('assets/css/custom/profiles.css') }}" rel="stylesheet">  
@@ -18,6 +18,8 @@
           <link href=" {{ asset('assets/css/custom/login.css') }}" rel="stylesheet">
       @elseif ( $assets === "register" )
           <link href=" {{ asset('assets/css/custom/register.css') }}" rel="stylesheet">
+      @elseif ( $assets === "market" )
+        <link href=" {{ asset('assets/css/custom/market.css') }}" rel="stylesheet">
       @endif
 
   </head>
