@@ -6,6 +6,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\ProductsController;
 
 // function getuserdata() {
 //     return $data = [
@@ -31,20 +32,16 @@ Route::get('/admin/delete', [AdminController::class, 'index'])->name('adminDelet
 Route::get('/profile/{id}', [AdminController::class, 'byId'])->name('profile');
 
 
+Route::get('/market', [ProductsController::class, 'index'])->name('market');
+
+
+
 Route::get('/about', function () {
     return view('about', [
         "tittle" => "about",
         "assets" => "about"
     ]);
 })->name('about');
-
-Route::get('/market', function () {
-    return view('market', [
-        "tittle" => "market",
-        "assets" => "market"
-    ]);
-})->name('market');
-
 Route::get('/sell', function () {
     return view('sell', [
         "tittle" => "sell",
