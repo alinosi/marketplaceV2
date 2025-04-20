@@ -1,4 +1,4 @@
-<?php use app\core\Flasher as Flasher;?>
+{{-- <?php use app\core\Flasher as Flasher;?> --}}
 
 @extends('layouts.web.main')
 
@@ -18,18 +18,17 @@
             @foreach ($data as $index => $item)
                 <div class="col-md-4 mb-4">
                     <div class="card">
-                        <!-- <img src="{{ $item->image }}$item['image'] }}" class="card-img-top" alt="{{ $item['name'] }}"> -->
+                        <!-- <img src="{{ $item['image'] }}$item['image'] }}" class="card-img-top" alt="{{ $item['product_name'] }}"> -->
                         <div class="card-body">
-                            <h5 class="card-title">{{ $item['Product_Name'] }}</h5>
-                            <p class="card-text">Price: {{ $item['Price'] }}</p>
-                            <p class="card-text">Status: {{ $item['Status'] }}</p>
+                            <h5 class="card-title">{{ $item['product_name'] }}</h5>
+                            <p class="card-text">Price: {{ $item['product_price'] }}</p>
+                            <p class="card-text">Status: {{ $item['status'] }}</p>
                             <button class="btn btn-primary" data-toggle="modal" data-target="#productDetails{{ $index }}">Details</button>
                         </div>
                     </div>
                 </div>
-            @endforeach
-    
-            @foreach ($data as $index => $item)
+
+                {{-- modal box --}}
                 <div class="modal fade" id="productDetails{{ $index }}" tabindex="-1" role="dialog" aria-labelledby="productDetailsLabel{{ $index }}" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
@@ -40,8 +39,8 @@
                                 </button>
                             </div>
                             <div class="modal-body">
-                                <p><strong>Name:</strong> {{ $item['Product_Name'] }}</p>
-                                <p><strong>Price:</strong> {{ $item['Price'] }}</p>
+                                <p><strong>Name:</strong> {{ $item['product_name'] }}</p>
+                                <p><strong>Price:</strong> {{ $item['product_price'] }}</p>
                                 <p><strong>Store Address:</strong> {{ $item['Owner_Address'] }}</p>
                                 <p><strong>Status:</strong> {{ $item['Status'] }}</p>
                                 <p><strong>Descriptions:</strong> {{ $item['Description'] }}</p>

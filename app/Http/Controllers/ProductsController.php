@@ -14,4 +14,12 @@ class ProductsController extends Controller
             "data" => Products::all()->toArray()
         ]);
     }
+
+    public function byId($id) {
+        return view('web/market/product', [
+            "title" => "Product",
+            "assets" => "product",
+            "data" => Products::find($id)
+        ]);
+    }
 }
