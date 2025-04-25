@@ -22,7 +22,7 @@ class ProductsController extends Controller
             "assets" => "product",
             "data" => $product
         ]);
-    }
+    }   
 
 //     public function categories ( Categories $category) {
 //         return [ "data" => $category ];
